@@ -1,0 +1,33 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    margin-top: 20px;
+  
+
+}
+
+.logo{
+    
+    padding-right: 550px;
+   
+}
+nav li{
+    padding: 0 20px;
+    margin-top: 0;
+   
+}
+
+span{
+    color: red;
+}
