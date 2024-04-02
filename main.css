@@ -89,11 +89,9 @@ span{
     margin-right: 10%;
 }
 
-.my-pic:hover{
-    cursor: pointer;
-   
-}
+
 .my-pic:hover {
+    cursor: pointer;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
