@@ -4,7 +4,6 @@ body{
 
 nav{
     background-color: red;
-     padding: 5px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -40,16 +39,9 @@ nav{
    flex-direction: row;
    text-decoration: none;
    justify-content: space-evenly;
-   padding: 20px;
+   padding: 10px 30px;
 }
 
-
-.nav-links ul li a{
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
-}
 .nav-links ul li a:hover {
     color: black;
 }
