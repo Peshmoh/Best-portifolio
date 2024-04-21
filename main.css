@@ -6,7 +6,7 @@ body{
 }
 
 nav{
-    background-color: red;
+    background-color: white;
     position: fixed;
     width: 100%;
     top: 0;
@@ -37,7 +37,7 @@ nav{
 }
 
 .nav-links .links a{
-   color: white;
+   color: black;
    display: flex;
    flex-direction: row;
    text-decoration: none;
@@ -46,8 +46,8 @@ nav{
    font-size: large;
 }
 
-.nav-links ul li a:hover {
-    color: black;
+.nav-links a:hover {
+    color: red;
 }
 
 
@@ -155,7 +155,8 @@ span{
   }
 
   .projects{
-    padding-top: 30px;
+    background: rgb(255,255,255);
+    padding-top: 60px;
   }
 
   .projects p{
@@ -170,4 +171,9 @@ span{
     text-align: center;
     font-size: large;
    
+    }
+
+    .firstpart p{
+        padding-top: 10px;
+
     }
