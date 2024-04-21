@@ -144,16 +144,38 @@ span{
         flex-wrap: wrap;
     }
 
-    .skillcards{
-        margin-left: 20%;
-    }
+    /* skill part */
+  .skillcards {
+    width: 350px;
+    margin: 0 auto;
+}
 
-  .skls{
-    line-height: 30px;
-    font-weight: 800;
-    color: #646464;
-  }
+.skill {
+    margin-bottom: 4px;
+}
 
+.skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    background-color: #f0f0f0;
+    height: 4px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    background-color:hwb(16 9% 8%);
+    height: 100%;
+}
+
+.skill-percent {
+    color: black;
+    float: right;
+    margin-left: 10px;
+}
   .projects{
     background: rgb(255,255,255);
     padding-top: 60px;
