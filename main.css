@@ -217,6 +217,7 @@ span{
     .contact{
         margin-top: 10px;
         padding-top: 30px;
+        padding-bottom: 20px;
         background:linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)) center center, url(images/common-bg.svg);
         background-position: center center;
     
@@ -279,4 +280,34 @@ span{
         margin-bottom: 15px;
         display: inline-block;
         padding:10px 50px;
+    }
+
+    /* footer */
+    .footer{
+        background: black;
+        color: white;
+        padding: 40px;
+
+    }
+    .flex-footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 30px 0px;
+    }
+
+    .footer p{
+        padding-top: 18px;
+    }
+
+    .footer-icons{
+        margin-right: 70px;
+    }
+
+    .social-icons{
+        display: flex;
+    }
+
+    .copyright{
+        text-align: center;
     }
