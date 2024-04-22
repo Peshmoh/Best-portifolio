@@ -59,7 +59,7 @@ nav{
     padding: 20px;
     padding-left: 40px;
     justify-content: space-between;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -70,22 +70,24 @@ span{
 
 .first-p{
     padding-top: 50px;
-    padding-bottom: 0px;
+    padding-bottom: 5px;
     line-height: 0%;
     font-size: large;
 }
 
 .first-h{
     font-size: xx-large;
-    font-weight: bolder;
-    word-spacing: 8px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+
 }
 
 .second-p{
-    margin-top: 0;
+    margin-top: 20px;
     color: #646464;
     font-size: medium;
-    font-style: italic;
+    font-style: oblique;
     
 }
 
@@ -101,20 +103,30 @@ span{
     cursor: pointer;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
+
 .header-socialm{
+    padding-top: 50px;;
     display: flex;
     justify-content: space-evenly;
 }
+.header-socialm .sosialm {
+    padding-left: 0;
+}
+
+
 .sosialm{
     display: flex;
+    flex-wrap: nowrap;
     list-style: none;
+    padding-top: 5px;
 }
-.sm{
+
+.sm {
     border-radius: 5px;
-    border:solid 1px blue;
+    border: 1px solid blue;
+    border-image: initial;
     padding: 20px;
     margin: 5px;
-
 }
 
 /* about section */
@@ -199,3 +211,27 @@ span{
         padding-top: 10px;
 
     }
+
+
+    /* contact section */
+    .contact{
+        margin-top: 10px;
+        padding-top: 30px;
+        background:linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)) center center, url(images/common-bg.svg);
+        background-position: center center;
+    
+    }
+    .contact p{
+        font-weight: 550;
+        color: #646464;
+        text-align: center;
+        font-size: large;
+    }
+    .contact h1{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+  
+   
+
+    
