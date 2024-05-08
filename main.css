@@ -24,6 +24,7 @@ nav{
     flex-wrap: wrap;
 }
 
+
 .logo img{
     height: 40px;
     width: auto;
@@ -253,7 +254,7 @@ span{
         margin: 30px;
     }
 
-    input{
+    input ,textarea{
         background-color: rgb(240,240,240);
         margin-top: 10px;
         border: none;
@@ -264,7 +265,7 @@ span{
         padding:0px 10px;
     }
 
-    .fmessage input{
+    .fmessage textarea{
         min-height: 200px;
     }
 
