@@ -15,3 +15,15 @@
         const sidebar = document.querySelector('.sidebar')
         sidebar.style.display = 'none'
     }
+
+    const btnSrollToTop = document.querySelector('.scrollToTop');
+
+    btnSrollToTop.addEventListener('click',function(){
+        window.scrollTo({
+            top:0,
+            left:0,
+            behavior:"smooth"
+        });
+    });
+
+
