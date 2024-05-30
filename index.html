@@ -6,12 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
  
    <nav>
     <ul class="sidebar">
-      <li onclick=hideSidebar()><a href="">**</a></li>
+      <li onclick=hideSidebar() class="cancel"><a href=""><i class="fa-solid fa-xmark"></i></a></li>
       <li><a href="#">HOME</a></li>
       <li><a href="#about">ABOUT</a></li>
       <li><a href="#projects">PROJECTS</a></li>
@@ -27,7 +28,7 @@
                 <div class="links"><a href="#about">ABOUT</a></div>
                 <div class="links"><a href="#projects">PROJECTS</a></div>
                 <div class="links"><a href="#contact">CONTACT</a></div>
-                <button class="menu-btn" onclick=showSidebar()>##</button>
+                <button class="menu-btn" onclick=showSidebar()><i class="fa-solid fa-bars"></i></button>
              
             </div>
     </div>
@@ -229,24 +230,24 @@
         <h1>CONTACT</h1>
         <p>Feel free to Contact me by submitting the form below and I will get back to you as soon as <br>possible</p>
     </div>
-        <div class="form-container">
-            <form action="" >
-                <div class="fname">
-                  <label for="name">Name:</label> <br>
-                  <input type="text" id="name" placeholder="Enter Your Name"> <br>
-                </div>
-                  <div class="femail">
-                    <label for="email">Email:</label> <br>
-                    <input type="email" id="email" placeholder="Enter Your Email"> <br>
-                  </div>  
-                    <div class="fmessage">                     
-                      <label for="message">Message:</label> <br>
-                      <textarea name="" id="message"></textarea>
-                    </div>  
-                <button type="button" class="fbtn">Submit</button>
-            </form>
+    <div class="form-container">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="c5bf1c18-54f3-4b70-9746-0d0f17744982">
+        <div class="fname">
+          <label for="name">Name:</label> <br>
+          <input type="text" id="name" name="name" required> <br>
         </div>
-
+        <div class="femail">
+          <label for="email">Email:</label> <br>
+          <input type="email" id="email" name="email" required> <br>
+        </div>
+        <div class="fmessage">
+          <label for="message">Message:</label> <br>
+          <textarea name="message" id="message" required></textarea>
+        </div>
+        <button class="fbtn" type="submit">Submit</button>
+      </form>
+    </div>
 </div>
 
   <div class="footer">
@@ -259,11 +260,11 @@
         <div class="footer-icons">
           <h4>SOCIAL</h4>
           <ul class="social-icons">
-            <li><a href=""><img src="" alt="1"></a></li>
-            <li><a href=""><img src="" alt="2"></a></li>
-            <li><a href=""><img src="" alt="2"></a></li>
-            <li><a href=""><img src="" alt="4"></a></li>
-            <li><a href=""><img src="" alt="5"></a></li>
+            <li class="f-icons"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+            <li class="f-icons"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="f-icons"><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+            <li class="f-icons"><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li class="f-icons"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
           </ul>
         </div>
       </div> 
@@ -274,7 +275,7 @@
       </div>
   </div>
 
-  <button class="scrollToTop">^</button>
+  <button class="scrollToTop"><i class="fa-solid fa-arrow-up"></i></button>
 
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

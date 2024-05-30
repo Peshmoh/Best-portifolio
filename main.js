@@ -16,14 +16,36 @@
         sidebar.style.display = 'none'
     }
 
-    const btnSrollToTop = document.querySelector('.scrollToTop');
+    const btnScrollToTop = document.querySelector('.scrollToTop');
 
-    btnSrollToTop.addEventListener('click',function(){
+    // Function to check scroll position and toggle button visibility
+    function toggleScrollToTopButton() {
+        const scrollPosition = window.scrollY;
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+    
+        // Show button when scrolled more than 50% of the document height
+        if (scrollPosition > (documentHeight - windowHeight) / 2) {
+            btnScrollToTop.style.display = 'block';
+        } else {
+            btnScrollToTop.style.display = 'none';
+        }
+    }
+    
+    // Add scroll event listener
+    window.addEventListener('scroll', toggleScrollToTopButton);
+    
+    // Initial check in case the page is loaded already scrolled
+    toggleScrollToTopButton();
+    
+    // Add click event listener to the button for smooth scroll to top
+    btnScrollToTop.addEventListener('click', function() {
         window.scrollTo({
-            top:0,
-            left:0,
-            behavior:"smooth"
+            top: 0,
+            left: 0,
+            behavior: "smooth"
         });
     });
+    
 
 

@@ -102,6 +102,11 @@ nav a:hover{
 
 .menu-btn{
     display: none;
+    border: none;
+}
+
+.cancel{
+    padding: 20px 0;
 }
 
 @media(max-width:800px){
@@ -384,8 +389,13 @@ span{
 
     .social-icons{
         display: flex;
+        list-style: none;
+        padding-left: 20px;
     }
 
+    .f-icons{
+       padding: 10px;
+    }
     .copyright{
         text-align: center;
     }
@@ -406,3 +416,5 @@ span{
         outline: none;
         cursor: pointer;
     }
+
+    
