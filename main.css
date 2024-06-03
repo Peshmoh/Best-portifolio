@@ -262,7 +262,7 @@ span{
 }
 
 .skill-progress {
-    background-color:hwb(16 9% 8%);
+    background-color:red;
     height: 100%;
 }
 
@@ -398,6 +398,10 @@ span{
         text-align: center;
     }
 
+    .f-icons {
+        padding: 10px;
+        font-size: 24px; /* increase the font size to 24px */
+      }
     /* scroll top btn */
 
     .scrollToTop{
