@@ -206,9 +206,9 @@ span{
 
 .sm {
     border-radius: 5px;
-    border: 1px solid blue;
+    border: 1px solid black;
     border-image: initial;
-    padding: 20px;
+    padding: 5px;
     margin: 5px;
 }
 
@@ -351,18 +351,16 @@ span{
     }
 
     .fbtn{
-        background: hsla(73, 85%, 48%, 0.92);
+        background: red;
         color: white;
         text-transform: uppercase;
         font-weight: 700;
         letter-spacing: 2px;
-        margin-left:38%;
+        margin-left: 42%;
         border: none;
         border-radius: 5px;
         cursor: pointer;
         margin-bottom: 15px;
-       align-items: center;
-        padding:10px 50px;
     }
 
     /* footer */
