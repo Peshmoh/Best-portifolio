@@ -212,6 +212,7 @@ span{
     margin: 5px;
 }
 
+
 /* about section */
 .aboutme{
     padding-top: 30px;
@@ -279,7 +280,9 @@ span{
   
   .services {
     padding-top: 30px;
-    background-color: #f9f9f9;
+    background:linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)) center center, url(images/common-bg.svg);
+    background-position: center center;
+
   }
   
   .services p {
