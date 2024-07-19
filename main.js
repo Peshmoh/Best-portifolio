@@ -46,6 +46,26 @@
             behavior: "smooth"
         });
     });
-    
-
-
+    document.addEventListener('DOMContentLoaded', function () {
+        new Splide('#image-carousel', {
+          type: 'loop',
+          perPage: 4,
+          perMove: 1,
+          autoplay: {
+            delay: 3000,
+            pauseOnHover: false,
+          },
+          interval: 3000,
+          gap: '0.5rem',
+          speed: 600,
+          rewind: true,
+          breakpoints: {
+            650: {
+              perPage: 1,
+            },
+          },
+          autoScroll: {
+            speed: 1, // adjust the scroll speed to your liking
+          },
+        }).mount();
+      });
