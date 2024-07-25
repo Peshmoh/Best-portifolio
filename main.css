@@ -184,7 +184,8 @@ span{
 /* Media query for small screens */
 @media (max-width: 480px) {
     .my-pic {
-       height: 180px; /* adjust the height to a smaller value */
+       height: 280px; /* adjust the height to a smaller value */
+       width: 260px;
        margin-top: 20px; /* adjust the margin-top to a smaller value */
        display: block; /* make the image a block element */
        margin: 20px auto; /* add horizontal margin and set auto to center */
