@@ -47,20 +47,25 @@
         });
     });
     document.addEventListener('DOMContentLoaded', function () {
-        new Splide('#image-carousel', {
-          type: 'loop',
-          perPage: 4 ,
-          perMove: 1,
-          autoplay: {
-            delay: 3000,
-            pauseOnHover: false,
+      new Splide('#image-carousel', {
+        type: 'loop',
+        perPage: 3, // Display three slides at a time
+        perMove: 1,
+        autoplay: {
+          delay: 3000,
+          pauseOnHover: false,
+        },
+        interval: 3000,
+        speed: 600,
+        rewind: true,
+        autoScroll: {
+          speed: 2, // Adjust the scroll speed to your liking
+        },
+        breakpoints: {
+          650: {
+            perPage: 1, // Display one slide at a time on screens 650px or smaller
           },
-          interval: 1000,
-          gap: '0.5rem',
-          speed: 600,
-          rewind: true,
-          autoScroll: {
-            speed: 2, // adjust the scroll speed to your liking
-          },
-        }).mount();
-      });
+        },
+      }).mount();
+    });
+    

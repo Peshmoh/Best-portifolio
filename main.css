@@ -285,51 +285,50 @@ span{
     }
   }
   
+
   
+  /* Track styling */
+  .splide__track {
+    padding: 4px; /* Optional: space above and below the carousel */
+  }
+  
+  /* Carousel card styling */
   .carousel-card {
     text-align: center;
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    border: none;
     background-color: #fff;
-    margin: 5px;
-    width: 250px; /* adjust the width to your liking */
+    margin:5px;
+    width: 360px; /* Adjust the width as needed */
+    transition: box-shadow 0.3s ease-in-out;
+    border:none/* Black border */
   }
   
   .carousel-card img {
-    max-width: 100%;
-    height: 150px; /* adjust the height to your liking */
+    width: 100%;
+    height: 215px; /* Adjust the height as needed */
     object-fit: cover;
     border-radius: 10px;
-  }
-  
- /* CSS */
-.carousel-card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.3s ease-in-out;
   }
   
   .carousel-card:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   }
   
-  /* Make carousel picture appear on center in phone view */
+ 
+  
+  /* Make carousel picture appear centered on phone view */
   @media (max-width: 768px) {
-   .splide__slide {
+    .splide__slide {
       text-align: center;
     }
-   .carousel-card {
+    .carousel-card {
       margin: 0 auto;
     }
   }
-  .splide {
-    visibility: visible;
-  }
-  
-  
+
   /* Services Section */
   
   .services {
