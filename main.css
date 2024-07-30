@@ -323,7 +323,12 @@ span{
     transition: box-shadow 0.3s ease-in-out;
     border:none/* Black border */
   }
-  
+  .carousel-card p {
+    background: linear-gradient( black, black,red, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
   .carousel-card img {
     width: 100%;
     height: 215px; /* Adjust the height as needed */
