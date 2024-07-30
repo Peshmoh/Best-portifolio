@@ -47,6 +47,19 @@ nav{
     color: red;
 }
 
+
+.menu-btn  {
+    background: none; 
+  }
+/* Media query for screen widths of 500px or less */
+@media (max-width: 500px) {
+    .menu-btn i {
+      margin-right: 15px;
+    }
+    .scrollToTop {
+        margin-right: 15px;
+      }
+  }
 /* responsive sidebar */
 .sidebar{
     position: fixed;
@@ -329,14 +342,11 @@ span{
       margin: 0 auto;
     }
   }
-
-  /* Services Section */
-  
-  .services {
+/* Services Section */
+.services {
     padding-top: 30px;
-    background:linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)) center center, url(images/common-bg.svg);
+    background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)) center center, url(images/common-bg.svg);
     background-position: center center;
-
   }
   
   .services p {
@@ -358,7 +368,6 @@ span{
   }
   
   .servicecontent {
-    margin-left: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -367,12 +376,12 @@ span{
   
   .servicecards {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
   
   /* Service Card Styles */
-  
   .service {
     width: 350px;
     margin: 20px;
@@ -402,7 +411,6 @@ span{
   }
   
   /* Hover Effect */
-  
   .service:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     transform: translateY(-10px);
@@ -410,6 +418,15 @@ span{
   
   .service:hover i {
     transform: scale(1.1);
+  }
+  
+  /* Media query for screen widths of 500px or less */
+  @media (max-width: 500px) {
+  
+    .service {
+      width: calc(100% - 20px); /* Full width minus margins */
+      margin: 10px auto; /* Center the cards with top and bottom margin */
+    }
   }
   
  
