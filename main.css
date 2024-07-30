@@ -55,6 +55,7 @@ nav{
 @media (max-width: 500px) {
     .menu-btn i {
       margin-right: 15px;
+      font-size: 20px;
     }
     .scrollToTop {
         margin-right: 15px;
@@ -291,8 +292,11 @@ span{
     margin-top: 20px;
 }
 @media (max-width: 480px) {
+    .skillcards {
+      padding-right: 20px; 
+    }    
     .download-cv {
-    margin-left: 80px;
+    margin-left: 70px;
     padding:1 2px;
     margin-bottom: 10px;
 
